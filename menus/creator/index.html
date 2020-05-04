@@ -13,7 +13,7 @@
     <div class="inventory inv_left">
       <div class="inventory_head">
         <div class="inventory_head_left">
-          <span>Character</span><label>Creator</label>
+          <span>Criação de</span><label>Personagem</label>
         </div>  
         <div class="inventory_isset isnotset changeGender" data-value="1">
             <img src="../../images/creator/female.png">
@@ -26,31 +26,31 @@
           <div class="creator_menus">
             <div class="creator_menu active" data-menu="parents">
                 <img src="../../images/creator/parents.png">
-                <label>Parents</label>
+                <label>Parentesco</label>
             </div>
             <div class="creator_menu" data-menu="eyes">
               <img src="../../images/creator/eye.png">
-                <label>Eyes</label>
+                <label>Olhos</label>
             </div>
             <div class="creator_menu" data-menu="nose">
               <img src="../../images/creator/nose.png">
-                <label>Nose</label>
+                <label>Nariz</label>
             </div>
             <div class="creator_menu" data-menu="chin">
               <img src="../../images/creator/chin.png">
-                <label>Chin</label>
+                <label>Queixo</label>
             </div>
             <div class="creator_menu" data-menu="cheek">
               <img src="../../images/creator/cheek.png">
-                <label>Cheek</label>
+                <label>Bochechas</label>
             </div>
             <div class="creator_menu" data-menu="lips">
               <img src="../../images/creator/lips.png">
-                <label>Lips</label>
+                <label>Lábios</label>
             </div>
             <div class="creator_menu" data-menu="neck">
               <img src="../../images/creator/neck.png">
-                <label>Neck</label>
+                <label>Pescoço</label>
             </div>
           </div>
       </div>
@@ -58,71 +58,71 @@
       <div class="creator_content">
         <div id="parents" class="creator_submenu">
           <ul>
-            <label class="creator_menu_label">Father's face</label>
+            <label class="creator_menu_label">Rosto do Pai</label>
             <li class="range range-primary">
               <input type="range" min="0" max="45" value="0" step="1" class="slider" data-type="parents" id="changeShapeFirstID" oninput="ShapeFirstID.value=value">
               <output id="ShapeFirstID">0</output>
             </li>
-            <label class="creator_menu_label">Father's ancestry</label>
+            <label class="creator_menu_label">Ancestrais do Pai</label>
             <li class="range range-primary">
                 <input type="range" min="0" max="45" value="0" step="1" class="slider" data-type="parents" id="changeSkinFirstID" oninput="SkinFirstID.value=value">
                 <output id="SkinFirstID">0</output>
             </li>
-            <label class="creator_menu_label">Mother's face</label>
+            <label class="creator_menu_label">Rosto da Mãe</label>
             <li class="range range-primary">
                 <input type="range" min="0" max="45" value="0" step="1" class="slider" data-type="parents" id="changeShapeSecondID" oninput="ShapeSecondID.value=value">
                 <output id="ShapeSecondID">0</output>
             </li>
-            <label class="creator_menu_label">Mother's ancestry</label>
+            <label class="creator_menu_label">Ancestrais da Mãe</label>
             <li class="range range-primary">
                 <input type="range" min="0" max="45" value="0" step="1" class="slider" data-type="parents" id="changeSkinSecondID" oninput="SkinSecondID.value=value">
                 <output id="SkinSecondID">0</output>
             </li>
-            <label class="creator_menu_label">Face dominant gene</label>
+            <label class="creator_menu_label">Gene Dominante do Rosto</label>
             <li class="range range-primary">
                 <input type="range" min="-100" max="100" value="0" step="1" class="slider" data-type="parents" id="changeShapeMix" oninput="ShapeMix.value=value">
                 <output id="ShapeMix">0</output>
             </li>
-            <label style="font-size: 10px;"><i class="fa fa-mars" aria-hidden="true"></i> Father<span style="float: right">Mother <i class="fa fa-venus" aria-hidden="true"></i></span></label>
-            <label class="creator_menu_label">Ancestry dominant gene</label>
+            <label style="font-size: 10px;"><i class="fa fa-mars" aria-hidden="true"></i> Pai<span style="float: right">Mãe <i class="fa fa-venus" aria-hidden="true"></i></span></label>
+            <label class="creator_menu_label">Gene do Ancestral Dominante</label>
             <li class="range range-primary">
                 <input type="range" min="-100" max="100" value="0" step="1" class="slider" data-type="parents" id="changeSkinMix" oninput="SkinMix.value=value">
                 <output id="SkinMix">0</output>
             </li>
-            <label style="font-size: 10px;"><i class="fa fa-mars" aria-hidden="true"></i> Father<span style="float: right">Mother <i class="fa fa-venus" aria-hidden="true"></i></span></label>
+            <label style="font-size: 10px;"><i class="fa fa-mars" aria-hidden="true"></i> Pai<span style="float: right">Mãe <i class="fa fa-venus" aria-hidden="true"></i></span></label>
           </ul>
         </div>
         
         <div id="eyes" class="creator_submenu" style="display:none">
             <ul>
-              <label class="creator_menu_label">Eye state</label>
+              <label class="creator_menu_label">Estado dos Olhos</label>
               <li class="range range-success">
                 <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" id="changeEyesWidth" data-type="face" oninput="widthEyes.value=value">
                 <output id="widthEyes">0</output>
               </li>
-              <label style="font-size: 10px;">Opened<span style="float: right">Closed</span></label>
-              <label class="creator_menu_label">Eye color</label>
+              <label style="font-size: 10px;">Abertos<span style="float: right">Fechados</span></label>
+              <label class="creator_menu_label">Cor dos Olhos</label>
               <li class="range range-success">
                 <input type="range" min="0" max="31" value="0" step="1" class="slider" id="changeEyeColor" data-type="eyes" oninput="colorEye.value=value">
                 <output id="colorEye">0</output>
               </li>
               <label style="display: block; font-size: 10px; width: 100%; text-align: center;" id="eyeColorName">Green</label>
-              <label class="creator_menu_label">Eyebrows</label>
+              <label class="creator_menu_label">Sobrancelhas</label>
               <li class="range range-success">
                 <input type="range" min="0" max="33" value="0" step="1" class="slider" id="changeEyebrows" data-type="overlay" oninput="Eyebrows.value=value">
                 <output id="Eyebrows">0</output>
               </li>
-              <label class="creator_menu_label">Eyebrow color</label>
+              <label class="creator_menu_label">Cor das Sobrancelhas</label>
               <li class="range range-success">
                 <input type="range" min="0" max="64" value="0" step="1" class="slider" id="changeEyebrows" data-type="overlay_color" oninput="eyebrowsColor.value=value">
                 <output id="eyebrowsColor">0</output>
               </li>
-              <label class="creator_menu_label">Brow width</label>
+              <label class="creator_menu_label">Tamanho da Sobrancelha</label>
               <li class="range range-success">
                 <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" id="changeBrowWidth" data-type="face" oninput="widthBrow.value=value">
                 <output id="widthBrow">0</output>
               </li>
-              <label class="creator_menu_label">Brow shape</label>
+              <label class="creator_menu_label">Formato da Sobrancelha</label>
               <li class="range range-success">
                 <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" id="changeBrowHeight" data-type="face" oninput="shapeBrow.value=value">
                 <output id="shapeBrow">0</output>
@@ -131,32 +131,32 @@
         </div>
         <div id="nose" class="creator_submenu" style="display:none">
             <ul>
-                <label class="creator_menu_label">Nose width</label>
+                <label class="creator_menu_label">Tamanho do Nariz</label>
                 <li class="range range-info">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeNoseWidth" oninput="widthNose.value=value">
                   <output id="widthNose">0</output>
                 </li>
-                <label class="creator_menu_label">Nose height</label>
+                <label class="creator_menu_label">Altura do Nariz</label>
                 <li class="range range-info">
                     <input type="range" min="-1" max="1" value="0" step="0.1"  class="slider" data-type="face" id="changeNoseHeight" oninput="heightNose.value=value">
                     <output id="heightNose">0</output>
                 </li>
-                <label class="creator_menu_label">Nose length</label>
+                <label class="creator_menu_label">Comprimento do Nariz</label>
                 <li class="range range-info">
                     <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeNoseLength" oninput="lengthNose.value=value">
                     <output id="lengthNose">0</output>
                 </li>
-                <label class="creator_menu_label">Nose bridge shift</label>
+                <label class="creator_menu_label">Ponte Nasal</label>
                 <li class="range range-info">
                     <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeNoseBridge" oninput="bridgeNose.value=value">
                     <output id="bridgeNose">0</output>
                 </li>
-                <label class="creator_menu_label">Nose tip</label>
+                <label class="creator_menu_label">Ponta do Nariz</label>
                 <li class="range range-info">
                     <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeNoseTip" oninput="tipNose.value=value">
                     <output id="tipNose">0</output>
                 </li>
-                <label class="creator_menu_label">Nose shift</label>
+                <label class="creator_menu_label">Alterar Forma Nasal</label>
                 <li class="range range-info">
                     <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeNoseShift" oninput="shiftNose.value=value">
                     <output id="shiftNose">0</output>
@@ -165,32 +165,32 @@
           </div>
           <div id="chin" class="creator_submenu" style="display:none">
             <ul>
-                <label class="creator_menu_label">Chin length</label>
+                <label class="creator_menu_label">Tamanho do Queixo</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeChinLength" oninput="lengthChin.value=value">
                   <output id="lengthChin">0</output>
                 </li>
-                <label class="creator_menu_label">Chin position</label>
+                <label class="creator_menu_label">Posição do Queixo</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeChinPosition" oninput="positionChin.value=value">
                   <output id="positionChin">0</output>
                 </li>
-                <label class="creator_menu_label">Chin width</label>
+                <label class="creator_menu_label">Largura do Queixo</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeChinWidth" oninput="widthChin.value=value">
                   <output id="widthChin">0</output>
                 </li>
-                <label class="creator_menu_label">Chin height</label>
+                <label class="creator_menu_label">Altura do Queixo</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeChinHeight" oninput="heightChin.value=value">
                   <output id="heightChin">0</output>
                 </li>
-                <label class="creator_menu_label">Jaw width</label>
+                <label class="creator_menu_label">Largura da Mandíbula</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeJawWidth" oninput="widthJaw.value=value">
                   <output id="widthJaw">0</output>
                 </li>
-                <label class="creator_menu_label">Jaw height</label>
+                <label class="creator_menu_label">Altura da Mandíbula</label>
                 <li class="range range-danger">
                   <input type="range" min="-1" max="1" value="0" step="0.1" class="slider" data-type="face" id="changeJawHeight" oninput="heightJaw.value=value">
                   <output id="heightJaw">0</output>
